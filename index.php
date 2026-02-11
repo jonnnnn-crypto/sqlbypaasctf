@@ -1,8 +1,7 @@
 <?php
-session_start();
+require_once 'config.php';
 
 // Database setup
-$db_file = 'ctf.db';
 $db = new SQLite3($db_file);
 
 // Create table if not exists
